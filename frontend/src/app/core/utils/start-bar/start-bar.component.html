@@ -1,19 +1,24 @@
 <nav class="start-bar container d-flex justify-content-between">
   <div>
-    <h1 class="title">Instagrone</h1>
+    <h1 class="title">
+      <a routerLink="/">Instagrone</a>
+    </h1>
   </div>
   <div class="search">
-
     <input type="text" name="search" placeholder="Pesquisar">
   </div>
   <div class="icons d-flex justify-content-between">
     <a routerLink="/">
-      <mat-icon style="font-size: 30px;">home</mat-icon>
+      <mat-icon>home</mat-icon>
     </a>
-    <mat-icon style="font-size: 30px;">send</mat-icon>
-    <mat-icon style="font-size: 30px;">explore</mat-icon>
-    <mat-icon style="font-size: 30px;">favorite_border</mat-icon>
-    <mat-icon style="font-size: 30px;">face</mat-icon>
+    <a routerLink="/direct">
+      <mat-icon>send</mat-icon>
+    </a>
+    <a routerLink="/explore">
+      <mat-icon>explore</mat-icon>
+    </a>
+    <mat-icon id="favorite">favorite_border</mat-icon>
+    <mat-icon id="face">face</mat-icon>
   </div>
 </nav>
 <hr>
