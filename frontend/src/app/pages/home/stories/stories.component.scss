@@ -1,0 +1,11 @@
+.stories {
+  margin-top: 30px;
+  border: 1px solid;
+  border-radius: 3px;
+  border-color: #DBDBDB;
+  width: 40vw;
+
+  .item {
+      flex-direction: row;
+  }
+}
