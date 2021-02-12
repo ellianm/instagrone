@@ -1,0 +1,7 @@
+<div class="stories">
+   <div class="item" *ngFor="let storie of stories">
+       <h1>{{storie.userName}}</h1>
+       <h1>{{storie.imgs[0].dateInc | date}}</h1>
+       <img src="{{storie.imgs[0].imgUrl}}">
+   </div>
+</div>
