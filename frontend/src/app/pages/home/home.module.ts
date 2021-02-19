@@ -5,6 +5,8 @@ import { HomeComponent } from './home.component';
 import { CoreModule } from 'src/app/core/core.module';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 import { StoriesComponent } from './stories/stories.component';
+import { FeedComponent } from './feed/feed.component';
+import { PostComponent } from './feed/post/post.component';
 
 @NgModule({
     imports:
@@ -12,7 +14,7 @@ import { StoriesComponent } from './stories/stories.component';
          BrowserModule,
          AppRoutingModule,
          CoreModule],
-    declarations: [HomeComponent, StoriesComponent],
+    declarations: [HomeComponent, StoriesComponent, FeedComponent, PostComponent],
     exports: [HomeComponent]
 })
 export class HomeModule { }
