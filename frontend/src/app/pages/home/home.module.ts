@@ -8,12 +8,15 @@ import { StoriesComponent } from './stories/stories.component';
 import { FeedComponent } from './feed/feed.component';
 import { PostComponent } from './feed/post/post.component';
 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
     imports:
         [CommonModule,
          BrowserModule,
          AppRoutingModule,
-         CoreModule],
+         CoreModule,
+         HttpClientModule],
     declarations: [HomeComponent, StoriesComponent, FeedComponent, PostComponent],
     exports: [HomeComponent]
 })
