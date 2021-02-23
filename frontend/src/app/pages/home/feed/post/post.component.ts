@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { PostService } from './post.service';
 
 @Component({
   selector: 'ig-post',
@@ -9,9 +10,10 @@ export class PostComponent implements OnInit {
 
   @Input() post;
 
-  constructor() { }
+  constructor(private PostService : PostService) { }
 
   ngOnInit(): void {
+    this.PostService.findAll()
   }
 
 }
