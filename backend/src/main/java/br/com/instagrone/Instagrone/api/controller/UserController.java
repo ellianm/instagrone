@@ -1,6 +1,5 @@
 package br.com.instagrone.Instagrone.api.controller;
 
-import br.com.instagrone.Instagrone.domain.exception.EntityNotFoundException;
 import br.com.instagrone.Instagrone.domain.model.User;
 import br.com.instagrone.Instagrone.domain.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,6 +30,4 @@ public class UserController {
 
         return user.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.notFound().build());
     }
-
-
 }
