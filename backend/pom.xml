@@ -12,7 +12,7 @@
 	<artifactId>Instagrone</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Instagrone</name>
-	<description>Clone do Istagram</description>
+	<description>Clone do Instagram</description>
 	<properties>
 		<java.version>15</java.version>
 	</properties>
